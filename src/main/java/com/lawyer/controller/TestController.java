@@ -11,6 +11,6 @@ public class TestController {
 
     @GetMapping
     public String test(){
-        return "test controller";
+        return "test controller 1";
     }
 }
