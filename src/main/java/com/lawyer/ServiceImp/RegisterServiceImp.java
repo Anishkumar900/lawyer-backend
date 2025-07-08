@@ -30,8 +30,8 @@ public class RegisterServiceImp implements RegisterService {
         if(existRegister){
             return false;
         }
-        System.out.println(USER_ROLE.USER);
-        System.out.println("Test");
+//        System.out.println(USER_ROLE.USER);
+//        System.out.println("Test");
         register.setRole(USER_ROLE.USER);
         register.setPassword(bCryptPasswordEncoder.encode(register.getPassword()));
         registerRepository.save(register);

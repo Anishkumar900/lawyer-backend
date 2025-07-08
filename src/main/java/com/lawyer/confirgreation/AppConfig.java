@@ -30,7 +30,7 @@ public class AppConfig {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/auth/**").permitAll()
-                        .requestMatchers("/api/security/**").authenticated()
+                        .requestMatchers("/secure/**").authenticated()
                         .requestMatchers("/api/**").permitAll()
                         .anyRequest().permitAll()
                 )
