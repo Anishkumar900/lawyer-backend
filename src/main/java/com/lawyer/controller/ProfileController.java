@@ -17,7 +17,7 @@ public class ProfileController {
     @GetMapping("/profile")
     public ResponseEntity<?> profile(@RequestHeader("Authorization") String token){
 //        System.out.println("controller test");
-//         token = token.replace("Bearer ", "");
+         token = token.replace("Bearer ", "");
         Register register = profileService.profile(token);
         return ResponseEntity.ok(register);
     }
