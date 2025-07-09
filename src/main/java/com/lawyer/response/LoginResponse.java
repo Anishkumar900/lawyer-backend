@@ -1,4 +1,4 @@
-package response;
+package com.lawyer.response;
 
 import com.lawyer.entity.Register;
 import lombok.AllArgsConstructor;

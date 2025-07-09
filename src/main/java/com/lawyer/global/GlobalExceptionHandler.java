@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import response.ApiResponse;
+import com.lawyer.response.ApiResponse;
 
 import java.security.SignatureException;
 import java.sql.Timestamp;

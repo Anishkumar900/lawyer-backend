@@ -1,4 +1,4 @@
-package response;
+package com.lawyer.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -3,21 +3,18 @@ package com.lawyer.controller;
 
 import com.lawyer.cloudeService.CloudinaryService;
 import com.lawyer.request.LoginRequest;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import response.ApiResponse;
+import com.lawyer.response.ApiResponse;
 import com.lawyer.service.RegisterService;
 import com.lawyer.entity.Register;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import response.LoginResponse;
+import com.lawyer.response.LoginResponse;
 
 import java.io.IOException;
 import java.sql.Timestamp;
-import java.util.Collections;
 
 @RestController
 @RequestMapping("/auth")
